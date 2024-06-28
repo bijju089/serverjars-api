@@ -1,2 +1,54 @@
-# serverjars-api
+# Minecraft Server Jars (API)
+> [!CAUTION]
+> It's not recommended to use this api in production, as most parts of the jars isn't done yet
+> Only /paper works as of 28 June 2024
+
 ServerJars API endpoint (Free to use)
+### URL
+**MAIN**: <br>
+`https://api.bijjuxd.me` , `https://api.cxstudios.org` <br>
+**FALLBACK / OTHER**: <br>
+`cxstudios-api.vercel.app` `serverjars.vercel.app`
+## Endpoint
+### 1. Fetch All Jar Types
+Retrieve a list of all available jar types. <br>
+**Endpoint:** <br>
+**GET** `/v1/serverjars/fetchTypes`
+```json
+{
+  "response": {
+    "modded": ["mohist", "fabric", "forge"],
+    "proxies": ["waterfall", "bungeecord", "velocity"],
+    "vanilla": ["vanilla", "snapshot"],
+    "servers": ["paper", "purpur", "sponge"]
+  }
+}
+```
+### 2. Fetch All Versions for a Category
+Retrieve all versions available for a specific category. <br>
+**Endpoint:** <br>
+**GET** `GET /v1/serverjars/fetchAll/{category}` <br>
+Parameters: The `{category}` of server jars (e.g., paper, fabric, forge). <br>
+  **Example Request**: <br>
+     **GET** `GET /v1/serverjars/fetchAll/paper`
+```json
+{
+  "response": [
+    {
+      "version": "1.21",
+      "file": "paper-1.21.jar"
+    }
+  ]
+}
+```
+### 3. Fetch a Specific Jar
+Retrieve the download URL for a specific jar file based on its type and version. <br>
+**GET** `/v1/serverjars/fetchJar/{category}/{minecraftversion}`
+```json
+{
+  "response": {
+    "url": "https://cdn.mcst.io/uploads/jar-storage/jars/paper-1.21.jar"
+  }
+}
+```
+
