@@ -1,12 +1,9 @@
 # Minecraft Server Jars (API)
-> [!CAUTION]
-> It's not recommended to use this api in production, as most parts of the jars isn't done yet
-> Only /paper works as of 28 June 2024
 
 ServerJars API endpoint (Free to use)
 ### URL
 **MAIN**: <br>
-`https://api.bijjuxd.me` , `https://api.cxstudios.org` <br>
+`https://api.bijjuxd.me` , `https://api.cxstudios.in` <br>
 **FALLBACK / OTHER**: <br>
 `cxstudios-api.vercel.app` `serverjars.vercel.app`
 ## Endpoint
@@ -35,8 +32,8 @@ Parameters: The `{category}` of server jars (e.g., paper, fabric, forge). <br>
 {
   "response": [
     {
-      "version": "1.21",
-      "file": "paper-1.21.jar"
+      "version": "1.21.1",
+      "file": "paper-1.21.1.jar"
     }
   ]
 }
@@ -47,7 +44,7 @@ Retrieve the download URL for a specific jar file based on its type and version.
 ```json
 {
   "response": {
-    "url": "https://cdn.mcst.io/uploads/jar-storage/jars/paper-1.21.jar"
+    "url": "https://cdn.cxstudios.in/uploads/serverjars/jars/paper-1.21.jar"
   }
 }
 ```
