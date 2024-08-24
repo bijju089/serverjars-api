@@ -1,5 +1,5 @@
 # Minecraft Server Jars (API)
-
+Please take a look at our new docs: https://docs.serverjars.in <br>
 ServerJars API endpoint (Free to use)
 ### URL
 **MAIN**: <br>
