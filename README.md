@@ -3,9 +3,7 @@
 ServerJars API endpoint (Free to use)
 ### URL
 **MAIN**: <br>
-`https://api.bijjuxd.me` , `https://api.cxstudios.in` <br>
-**FALLBACK / OTHER**: <br>
-`cxstudios-api.vercel.app` `serverjars.vercel.app`
+`https://api.serverjars.in`
 ## Endpoint
 ### 1. Fetch All Jar Types
 Retrieve a list of all available jar types. <br>
